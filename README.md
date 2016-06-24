@@ -10,7 +10,7 @@ const etcd = confabulous.loaders
 const processors = confabulous.processors
 
 new Confabulous()
-    .add((config) => etcd({ hosts: ['etcd.example.com'], key: 'config' }, [
+    .add((config) => etcd({ hosts: ['etcd.example.com:2379'], key: 'config' }, [
         processors.json()
     ]))
     .on('loaded', (config) => console.log('Loaded', JSON.stringify(config, null, 2)))

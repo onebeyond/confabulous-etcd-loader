@@ -71,7 +71,7 @@ describe('Etcd Loader', function() {
     })
 
     it('should report errors', function(done) {
-        loader({ hosts: ['httpx://localhost:8200'], key: 'tests/config' })(confabulous, function(err, config) {
+        loader({ hosts: ['httpx://localhost:2379'], key: 'tests/config' })(confabulous, function(err, config) {
             assert(err)
             assert(/All servers returned error/.test(err.message), err.message)
             done()
