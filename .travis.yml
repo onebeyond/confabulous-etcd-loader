@@ -1,0 +1,17 @@
+sudo: required
+
+services:
+- docker
+
+language: node_js
+
+before_install:
+- docker pull elcolio/etcd:latest
+- docker run -d -p 2379:2379 -p 2380:2380 elcolio/etcd
+
+node_js:
+  - "0.10"
+  - "0.12"
+  - "4"
+  - "5"
+  - "6"
