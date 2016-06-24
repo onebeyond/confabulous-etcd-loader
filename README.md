@@ -21,7 +21,6 @@ new Confabulous()
 ```
 
 ### Options
-```
 |  Option  |  Type  |  Default  |  Notes  |
 |----------|--------|-----------|---------|
 | hosts     | array    |        | Array of etcd hosts |
