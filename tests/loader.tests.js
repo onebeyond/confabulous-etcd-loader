@@ -62,14 +62,6 @@ describe('Etcd Loader', function() {
         })
     })
 
-    it('should timeout', function(done) {
-        loader({ key: 'tests/config', etcd: { timeout: 1 } })(confabulous, function(err, config) {
-            assert(err)
-            assert(/All servers returned error/.test(err.message), err.message)
-            done()
-        })
-    })
-
     it('should report errors', function(done) {
         loader({ hosts: ['httpx://localhost:2379'], key: 'tests/config' })(confabulous, function(err, config) {
             assert(err)
