@@ -20,7 +20,7 @@ new Confabulous()
     .end()
 ```
 
-### etcd
+### Usage
 Requests config from an etcd server (expects JSON by default).
 ```
 new Confabulous().add((config) => {
@@ -31,8 +31,8 @@ new Confabulous().add((config) => {
 |----------|--------|-----------|---------|
 | hosts     | array    |        | Array of etcd hosts |
 | key       | string   |        | Key from which to load config |
-| mandatory | boolean  | true  | Causes an error/reload_error to be emitted if the configuration does not exist |
-| watch     | boolean  | true  | Uses node-etcd's [watcher](https://github.com/stianeikeland/node-etcd#watcherkey-index-options) to monitor the key for changes |
-| etcd      | object   | {} | options that will be passed to [the underlying etcd client](https://github.com/stianeikeland/node-etcd#constructor-options).
+| mandatory | boolean  | true   | Causes an error/reload_error to be emitted if the configuration does not exist |
+| watch     | boolean  | true   | Uses node-etcd's [watcher](https://github.com/stianeikeland/node-etcd#watcherkey-index-options) to monitor the key for changes |
+| etcd      | object   |        | options that will be passed to [the underlying etcd client](https://github.com/stianeikeland/node-etcd#constructor-options).
 
 
