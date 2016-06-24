@@ -20,12 +20,7 @@ new Confabulous()
     .end()
 ```
 
-### Usage
-Requests config from an etcd server (expects JSON by default).
-```
-new Confabulous().add((config) => {
-    return loaders.http({ hosts: ['http://localhost:2379'] })
-})
+### Options
 ```
 |  Option  |  Type  |  Default  |  Notes  |
 |----------|--------|-----------|---------|
