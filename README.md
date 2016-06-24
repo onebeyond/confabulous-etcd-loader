@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/guidesmiths/confabulous-etcd-loader.png)](https://travis-ci.org/guidesmiths/confabulous-etcd-loader)
+[![Build Status](https://travis-ci.org/guidesmiths/confabulous-etcd-loader.png)(https://travis-ci.org/guidesmiths/confabulous-etcd-loader)
 # Confabulous Etcd Loader
 Confabulous-Etcd-Loader is an Etcd Loader for [Confabulous](https://github.com/guidesmiths/confabulous) - a hierarchical, asynchronous config loader and post processor.
 
