@@ -5,8 +5,8 @@ Confabulous-Etcd-Loader is an Etcd Loader for [Confabulous](https://github.com/g
 ## TL;DR
 ```
 const confabulous = require('confabulous')
+const etcd = require('confabulous-etcd-loader')
 const Confabulous = confabulous.Confabulous
-const etcd = confabulous.loaders
 const processors = confabulous.processors
 
 new Confabulous()
