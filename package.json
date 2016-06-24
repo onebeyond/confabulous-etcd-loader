@@ -6,6 +6,7 @@
   "scripts": {
     "test": "NODE_ENV=test mocha --recursive tests",
     "prepush": "npm run lint && npm test",
+    "lint": "eslint .",
     "docker": "cd tests; docker-compose up"
   },
   "keywords": [
