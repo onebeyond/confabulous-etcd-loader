@@ -27,10 +27,10 @@
     "parse-duration": "^0.1.1"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^0.23.0",
     "eslint-config-imperative": "0.0.6",
     "eslint-plugin-imperative": "0.0.2",
-    "chai": "^3.5.0",
     "husky": "^0.11.4",
     "mocha": "^2.5.3"
   },
