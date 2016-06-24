@@ -1,6 +1,6 @@
 {
   "name": "confabulous-etcd-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A confabulous etcd loader",
   "main": "index.js",
   "scripts": {
