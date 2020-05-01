@@ -7,7 +7,9 @@
     "test": "NODE_ENV=test mocha --recursive tests",
     "prepush": "npm run lint && npm test",
     "lint": "eslint .",
-    "docker": "cd tests; docker-compose up"
+    "docker": "cd tests; docker-compose up",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "Confabulous",
@@ -25,7 +27,8 @@
     "lodash.merge": "^4.4.0",
     "lodash.pick": "^4.2.1",
     "node-etcd": "^5.0.1",
-    "parse-duration": "^0.1.1"
+    "parse-duration": "^0.1.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -45,5 +48,6 @@
   "bugs": {
     "url": "https://github.com/guidesmiths/confabulous-etcd-loader/issues"
   },
-  "homepage": "https://github.com/guidesmiths/confabulous-etcd-loader#readme"
+  "homepage": "https://github.com/guidesmiths/confabulous-etcd-loader#readme",
+  "snyk": true
 }
