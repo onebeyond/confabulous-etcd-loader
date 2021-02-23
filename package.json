@@ -24,7 +24,7 @@
     "lodash.find": "^4.4.0",
     "lodash.merge": "^4.4.0",
     "lodash.pick": "^4.2.1",
-    "node-etcd": "^5.0.1",
+    "node-etcd": "^7.0.0",
     "parse-duration": "^0.1.1"
   },
   "devDependencies": {
